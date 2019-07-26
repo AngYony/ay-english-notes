@@ -5,8 +5,24 @@
         * {
             margin: 0;
             padding: 0;
-            font-family: Courier New, Courier, monospace;
+            font-family: 'Courier New', Courier, monospace;
         }
+        .my-rq{
+            position: relative;
+        }
+        .my{
+            position: absolute;
+            background-color:#d6f9f0;
+            font-size: 26px;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 10px;
+        }
+
+
+
+
+
+
 
         table {
             border-collapse: collapse;
@@ -22,7 +38,33 @@
     </style>
 </head>
 <body>
-    <table>
+    <div style="width:1000px; height: 700px; float:left; border:1px solid #a9a4a4;">
+            <canvas id="myCanvas" height="700" width="1000" style="border: 1px solid blue; position:absolute; z-index: -1;"  ></canvas>
+            <script>                
+            var c=document.getElementById("myCanvas");
+            var ctx=c.getContext("2d");
+            ctx.lineWidth=3;
+            ctx.lineJoin="round";
+            ctx.beginPath();
+            ctx.moveTo(300,80);
+            ctx.lineTo(400,500);
+            ctx.lineTo(600,500);
+            ctx.lineTo(700,80);
+            ctx.strokeStyle="#f4922d";
+            ctx.stroke();
+            </script>
+
+        <div class="my-rq">
+            <div class="my" style="left: 200px; top:80px;">
+                [i]
+            </div>
+        </div>
+    </div>
+    <div style="width: 400px; float:left; border: 1px solid red;">ssssssss</div>
+    <div style="clear:left;"></div>
+
+
+    <table >
         <tr>
             <td rowspan="5">元音</td>
             <td rowspan="3">单元音</td>
