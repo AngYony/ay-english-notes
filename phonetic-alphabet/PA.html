@@ -7,21 +7,58 @@
             padding: 0;
             font-family: 'Courier New', Courier, monospace;
         }
-        .my-rq{
+
+        .my-rq, wz-rq {
             position: relative;
         }
-        .my{
+
+        .my {
             position: absolute;
-            background-color:#d6f9f0;
+        }
+
+        .yb{
+            background-color: #d6f9f0;
             font-size: 26px;
-            font-family: 'Courier New', Courier, monospace;
             padding: 10px;
         }
 
 
+        .my-wz {
+            position: absolute;
+            font-size: 28px;
+            color: #4e7923;
+        }
 
+        h4.my-wz {
+            color: #393737;
+        }
 
+        .my:hover,.my-active {
+            background-color: #ff6a00;
+            cursor: pointer;
+            color: #eae9e9;
+        }
 
+        .fy-remark {
+            display: none;
+        }
+       
+        .yb-remark-panel{
+            width: 400px;
+            float:left; 
+            border: 1px solid #ea6506;
+            font-size:26px;
+            color:#ea6506;
+            padding:20px;
+            line-height:40px;
+        }
+
+        .bc{
+            color:#393737;
+             font-size:20px;
+             line-height:normal;
+             margin-top:10px;
+        }
 
 
         table {
@@ -33,35 +70,139 @@
             padding: 5px;
             text-align: center;
         }
-
-      
     </style>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
 </head>
 <body>
-    <div style="width:1000px; height: 700px; float:left; border:1px solid #a9a4a4;">
-            <canvas id="myCanvas" height="700" width="1000" style="border: 1px solid blue; position:absolute; z-index: -1;"  ></canvas>
-            <script>                
-            var c=document.getElementById("myCanvas");
-            var ctx=c.getContext("2d");
-            ctx.lineWidth=3;
-            ctx.lineJoin="round";
+    <div style="width:750px; height: 750px; float:left; border:1px solid #a9a4a4;">
+        <canvas id="myCanvas" height="750" width="750" style="position:absolute; z-index: -1;"></canvas>
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.lineWidth = 3;
+            ctx.lineJoin = "round";
             ctx.beginPath();
-            ctx.moveTo(300,80);
-            ctx.lineTo(400,500);
-            ctx.lineTo(600,500);
-            ctx.lineTo(700,80);
-            ctx.strokeStyle="#f4922d";
+            ctx.moveTo(170, 100);
+            ctx.lineTo(270, 520);
+            ctx.lineTo(470, 520);
+            ctx.lineTo(570, 100);
+            ctx.strokeStyle = "#f4922d";
             ctx.stroke();
-            </script>
+        </script>
 
-        <div class="my-rq">
-            <div class="my" style="left: 200px; top:80px;">
-                [i]
-            </div>
+        <!--文字说明部分定位-->
+        <div class="wz-rq">
+            <h4 class="my-wz" style="left:10px; top:10px;">单母音</h4>
+            <p class="my-wz" style="left:140px; top:55px;">扁</p>
+            <p class="my-wz" style="left:580px; top:55px;">小</p>
+            <p class="my-wz" style="left:280px; top:485px;">开</p>
+            <p class="my-wz" style="left:435px; top:485px;">大</p>
+            <h4 class="my-wz" style="left:10px; top:615px;">双母音</h4>
         </div>
+        
+
+
+        <!--左边部分-->
+        <div class="my-rq">
+            <div class="my yb" style="left: 80px; top:100px;" title="【yi】">
+                <span>[i]</span>
+                <div class="fy-remark">
+                    <p>念【易】，跟汉语拼音【yi】发音类似，嘴巴要很紧很扁发出，嘴角要往两边，舌尖要稍微用力一下。</p>
+                    <p class="bc">[i]和[I]：不是声音的长短，而是嘴型扁的程度。</p>
+                </div>
+            </div>
+
+            <div class="my yb" style="left: 100px; top:190px;" title="【yi】">
+                <span>[I]</span>
+                <p class="fy-remark">念【易】，跟汉语拼音【yi】发音类似，嘴巴要放松发出，平时说汉语中的“yi”发的就是此音。</p>
+            </div>
+
+            <div class="my yb" style="left: 122px; top:285px;" title="【ei】">
+                <span>[e]</span>
+                <p class="fy-remark">跟英文字母中的【A】发音类似，也和汉语拼音中的韵母【ei】发音类似，注意是第四声。</p>
+            </div>
+
+            <div class="my yb" style="left: 145px; top:380px;" title="【ai】">
+                <span>[ɛ]</span>
+                <p class="fy-remark">
+                念【（1/2）哎】，跟汉语拼音【ai】发音的前半截类似，不能直接读为汉语拼音【ai】，而是发出快速短促的轻声的四音【ai】音。
+                有点像平时说话时，引起别人注意，例如“ai,你吃饭了吗？”这种音调。例如单词`net`的音标为`[nɛt]`。
+                </p>
+            </div>
+
+            <div class="my yb" style="left: 165px; top:470px;" title="【ai】">
+                <span>[æ]</span>
+                <p class="fy-remark">
+                    和`[ɛ]`类似，但是发音的时候，嘴巴要张的比`[ɛ]`大，舌头下压。
+                </p>
+            </div>
+
+
+
+            <!--右边部分-->
+            <div class="my yb" style="left: 595px; top:100px;">
+                <span>[u]</span>
+            </div>
+
+            <div class="my yb" style="left: 570px; top:225px;">
+                <span>[ʊ]</span>
+            </div>
+
+            <div class="my yb" style="left: 540px; top:350px;">
+                <span>[ɔ]</span>
+            </div>
+
+            <div class="my yb" style="left: 510px; top:470px;">
+                <span>[o]</span>
+            </div>
+
+
+            <!--中间部分-->
+            <div class="my yb" style="left: 340px; top:540px;">
+                <span>[ɑ]</span>
+            </div>
+
+            <div class="my yb" style="left: 340px; top:445px;">
+                <span>[ʌ]</span>
+            </div>
+
+            <div class="my yb" style="left: 340px; top:370px;">
+                <span>[ə]</span>
+            </div>
+
+            <div class="my yb" style="left: 340px; top:295px;">
+                <span>[ɚ]</span>
+            </div>
+
+            <div class="my yb" style="left: 340px; top:220px;">
+                <span>[ɝ]</span>
+            </div>
+
+
+            <!--下面部分-->
+
+            <div class="my yb" style="left: 80px; top:665px;">
+                <span>[aʊ]</span>
+            </div>
+
+            <div class="my yb" style="left: 180px; top:665px;">
+                <span>[aɪ]</span>
+            </div>
+
+            <div class="my yb" style="left: 280px; top:665px;">
+                <span>[ɔɪ]</span>
+            </div>
+
+        </div>
+
     </div>
-    <div style="width: 400px; float:left; border: 1px solid red;">ssssssss</div>
+
+    <div id="yb_remark_panel" class="yb-remark-panel"></div>
     <div style="clear:left;"></div>
+
+
+
+
 
 
     <table >
@@ -685,6 +826,18 @@
         </tr>
     </table>
          
+
+    <script type="text/javascript">
+        $(function () {
+            $('.yb').click(function () {
+                $('.my-active').removeClass('my-active');
+                $('#yb_remark_panel').empty().append($(this).children('.fy-remark').html());
+                $(this).addClass('my-active');
+            });
+            
+
+        });
+    </script>
 
 </body>
 </html>
