@@ -8,6 +8,7 @@
             font-family: 'Courier New', Courier, monospace;
         }
 
+        /*母音相关的 */
         .my-rq, wz-rq {
             position: relative;
         }
@@ -16,12 +17,14 @@
             position: absolute;
         }
 
-        .yb{
-            background-color: #d6f9f0;
-            font-size: 26px;
-            padding: 10px;
+        .zy-rq {
+            margin-top:10px;
         }
 
+        .zy {
+            float: left;
+            margin-left: 15px;
+        }
 
         .my-wz {
             position: absolute;
@@ -29,36 +32,118 @@
             color: #4e7923;
         }
 
-        h4.my-wz {
+        h4.my-wz, h4 {
             color: #393737;
         }
 
-        .my:hover,.my-active {
+        .zy-title {
+            font-size: 28px;
+            float:left;
+            margin-left:10px;
+            margin-top:10px;
+        }
+
+
+        .yb, .kyb {
+            background-color: #ebfaf6;
+            font-size: 26px;
+            padding: 10px;
+            border: 1px solid #c4c3c3;
+        }
+
+
+        .yb-bgcolor_1 {
+            background-color: #fcc0fc;
+        }
+
+        .yb-bgcolor_2 {
+            background-color: #fbf6ba;
+        }
+
+        .yb-bgcolor_3 {
+            background-color: #b3f0f8;
+        }
+
+        .yb-bgcolor_4 {
+            background-color: #fcbec7;
+        }
+
+        .yb-bgcolor_5 {
+            background-color: #c6fbb0;
+        }
+
+        .yb-bgcolor_6 {
+            background-color: #c2dcfc;
+        }
+
+        .yb-bgcolor_7 {
+            background-color: #c6ffe5;
+        }
+
+        .yb-bgcolor_8 {
+            background-color: #e8e7ff;
+        }
+
+        .yb:hover, .yb-active {
             background-color: #ff6a00;
             cursor: pointer;
-            color: #eae9e9;
+            color: #ffffff;
         }
+
+
+
+
 
         .fy-remark {
             display: none;
         }
-       
-        .yb-remark-panel{
+
+
+        .yb-remark-panel {
             width: 400px;
-            float:left; 
             border: 1px solid #ea6506;
-            font-size:26px;
-            color:#ea6506;
-            padding:20px;
-            line-height:40px;
+            font-size: 26px;
+            color: #ea6506;
+            padding: 10px;
+            line-height: 40px;
+            position: fixed;
+            left: 750px;
         }
 
-        .bc{
-            color:#393737;
-             font-size:20px;
-             line-height:normal;
-             margin-top:10px;
+            .yb-remark-panel code, .right-message-panel code {
+                border: 1px solid #edecec;
+                background-color: #f1f1f1;
+                padding: 2px 3px;
+                line-height: 35px;
+                border-radius: 3px;
+            }
+
+            .yb-remark-panel ul {
+                margin-left: 30px;
+            }
+
+
+        .right-message-panel {
+            background-color: #fefdf0;
+            position: fixed;
+            right: 0px;
+            width: 520px;
+            font-size: 20px;
+            padding: 10px 10px 10px 30px;
         }
+        .right-message-panel li{height:30px;}
+
+        .bc {
+            color: #bb031f;
+            font-size: 24px;
+            line-height: normal;
+            margin-top: 20px;
+        }
+
+
+
+
+
 
 
         table {
@@ -74,7 +159,7 @@
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
 </head>
 <body>
-    <div style="width:750px; height: 750px; float:left; border:1px solid #a9a4a4;">
+    <div style="width:750px;height:750px; border:1px solid #a9a4a4; float:left;">
         <canvas id="myCanvas" height="750" width="750" style="position:absolute; z-index: -1;"></canvas>
         <script>
             var c = document.getElementById("myCanvas");
@@ -99,742 +184,456 @@
             <p class="my-wz" style="left:435px; top:485px;">大</p>
             <h4 class="my-wz" style="left:10px; top:615px;">双母音</h4>
         </div>
-        
+
 
 
         <!--左边部分-->
         <div class="my-rq">
-            <div class="my yb" style="left: 80px; top:100px;" title="【yi】">
-                <span>[i]</span>
+
+
+            <div class="my yb yb-bgcolor_1" style="left: 80px; top:100px;" title="【yi】">
+                <code>[i]</code>
                 <div class="fy-remark">
-                    <p>念【易】，跟汉语拼音【yi】发音类似，嘴巴要很紧很扁发出，嘴角要往两边，舌尖要稍微用力一下。</p>
-                    <p class="bc">[i]和[I]：不是声音的长短，而是嘴型扁的程度。</p>
+                    <p>念【易】，跟汉语拼音【<code>yi</code>】发音类似，嘴巴要很紧很扁发出，嘴角要往两边，舌尖要稍微用力一下。</p>
+                    <p class="bc"><code>[i]</code>和<code>[I]</code>：不是声音的长短，而是嘴型扁的程度。</p>
                 </div>
             </div>
 
-            <div class="my yb" style="left: 100px; top:190px;" title="【yi】">
-                <span>[I]</span>
-                <p class="fy-remark">念【易】，跟汉语拼音【yi】发音类似，嘴巴要放松发出，平时说汉语中的“yi”发的就是此音。</p>
+            <div class="my yb yb-bgcolor_1" style="left: 100px; top:190px;" title="【yi】">
+                <code>[I]</code>
+                <div class="fy-remark">
+                    <p>念【易】，跟汉语拼音【<code>yi</code>】发音类似，嘴巴要放松发出，平时说汉语中的“yi”发的就是此音。</p>
+                    <p class="bc"><code>[i]</code>和<code>[I]</code>：不是声音的长短，而是嘴型扁的程度。</p>
+                </div>
             </div>
 
             <div class="my yb" style="left: 122px; top:285px;" title="【ei】">
-                <span>[e]</span>
-                <p class="fy-remark">跟英文字母中的【A】发音类似，也和汉语拼音中的韵母【ei】发音类似，注意是第四声。</p>
+                <code>[e]</code>
+                <div class="fy-remark">
+                    <p>跟英文字母中的【<code>A</code>】发音类似，也和汉语拼音中的韵母【<code>ei</code>】发音类似，注意是第四声。</p>
+                </div>
             </div>
 
-            <div class="my yb" style="left: 145px; top:380px;" title="【ai】">
-                <span>[ɛ]</span>
-                <p class="fy-remark">
-                念【（1/2）哎】，跟汉语拼音【ai】发音的前半截类似，不能直接读为汉语拼音【ai】，而是发出快速短促的轻声的四音【ai】音。
-                有点像平时说话时，引起别人注意，例如“ai,你吃饭了吗？”这种音调。例如单词`net`的音标为`[nɛt]`。
-                </p>
+            <div class="my yb yb-bgcolor_2 " style="left: 145px; top:380px;" title="【ai】">
+                <code>[ɛ]</code>
+                <div class="fy-remark">
+                    <p>
+                        念【（1/2）哎】，跟汉语拼音【<code>ai</code>】发音的前半截类似，不能直接读为汉语拼音【<code>ai</code>】，而是发出快速短促的轻声的四音【<code>ai</code>】音。
+                        有点像平时说话时，引起别人注意，例如“ai,你吃饭了吗？”这种音调。例如单词<code>net</code>的音标为<code>[nɛt]</code>。
+                    </p>
+                </div>
             </div>
 
-            <div class="my yb" style="left: 165px; top:470px;" title="【ai】">
-                <span>[æ]</span>
-                <p class="fy-remark">
-                    和`[ɛ]`类似，但是发音的时候，嘴巴要张的比`[ɛ]`大，舌头下压。
-                </p>
+            <div class="my yb yb-bgcolor_2 " style="left: 165px; top:470px;" title="【ai】">
+                <code>[æ]</code>
+                <div class="fy-remark">
+                    <p>
+                        和<code>[ɛ]</code>类似，但是发音的时候，嘴巴要张的比<code>[ɛ]</code>大，舌头下压。
+                    </p>
+                </div>
             </div>
 
 
 
             <!--右边部分-->
-            <div class="my yb" style="left: 595px; top:100px;">
-                <span>[u]</span>
+            <div class="my yb yb-bgcolor_3" style="left: 595px; top:100px;" title="【e+u】">
+                <code>[u]</code>
+                <div class="fy-remark">
+                    <p>
+                        念【<code>e</code>+<code>u</code>】的合音，跟汉语拼音中的声母【<code>u</code>】发音类似，
+                        但是发音时，不能直接读为汉语拼音【<code>wu</code>】，而是【<code>wu</code>】发音的后半截，
+                        类似汉语拼音中的【<code>e</code>+<code>u</code>】合在一起的音。读的时候，嘴巴稍紧一些，音长一些。
+                    </p>
+                </div>
             </div>
 
-            <div class="my yb" style="left: 570px; top:225px;">
-                <span>[ʊ]</span>
+            <div class="my yb yb-bgcolor_3" style="left: 570px; top:225px;" title="【e+u】">
+                <code>[ʊ]</code>
+                <div class="fy-remark">
+                    <p>
+                        念【<code>e</code>+<code>u</code>】的合音，和<code>[u]</code>的读法类似，不同的是，嘴巴放松发出。
+                    </p>
+                </div>
             </div>
 
-            <div class="my yb" style="left: 540px; top:350px;">
-                <span>[ɔ]</span>
+            <div class="my yb yb-bgcolor_4" style="left: 540px; top:350px;" title="【o】">
+                <code>[ɔ]</code>
+                <div class="fy-remark">
+                    <p>
+                        念【哦】，读四声。
+                    </p>
+                </div>
             </div>
 
-            <div class="my yb" style="left: 510px; top:470px;">
-                <span>[o]</span>
+            <div class="my yb yb-bgcolor_5" style="left: 510px; top:470px;" title="【ou】">
+                <code>[o]</code>
+                <div class="fy-remark">
+                    <p>
+                        念【怄】，跟汉语拼音中的韵母【<code>ou</code>】发音类似，嘴巴作收缩状发音，该音结束时，也是以<code>[u]</code>音结尾的，
+                        有点类似英文字母【<code>o</code>】+汉语拼音【<code>u</code>】组合发出的音，但读的时候要连在一起读。
+                    </p>
+                </div>
             </div>
 
 
             <!--中间部分-->
-            <div class="my yb" style="left: 340px; top:540px;">
-                <span>[ɑ]</span>
+            <div class="my yb yb-bgcolor_6" style="left: 340px; top:540px;" title="【a】">
+                <code>[ɑ]</code>
+                <div class="fy-remark">
+                    <p>念【啊】，跟汉语拼音【<code>a</code>】发音类似，嘴巴要张的最大，四声。</p>
+                </div>
             </div>
 
-            <div class="my yb" style="left: 340px; top:445px;">
-                <span>[ʌ]</span>
+            <div class="my yb yb-bgcolor_6" style="left: 340px; top:445px;" title="【a】">
+                <code>[ʌ]</code>
+                <div class="fy-remark">
+                    <p>
+                        念【（1/2）啊】，跟汉语拼音【<code>a</code>】发音类似，虽然和音标<code>[ɑ]</code>的发音类似，
+                        但是<code>[ʌ]</code>发音有点像音标<code>[ɑ]</code>+<code>[ɛ]</code>的合成音，但是不发出<code>[ɛ]</code>音。
+                        并且音标<code>[ɑ]</code>是嘴巴张的很大发出的，而<code>[ʌ]</code>嘴巴要收一些。类似于汉语拼音中【<code>a</code>】的前半截发音。
+                    </p>
+                </div>
             </div>
 
-            <div class="my yb" style="left: 340px; top:370px;">
-                <span>[ə]</span>
+            <div class="my yb yb-bgcolor_7" style="left: 340px; top:370px;" title="【e】">
+                <code>[ə]</code>
+                <div class="fy-remark">
+                    <p>念【额】，跟汉语拼音【<code>e</code>】发音类似，就像人极度饥饿没有力气的时候，说“饿”时发出的音。该音是轻声音。</p>
+                    <p class="bc">
+                        <code>[ə]</code>和<code>[ɚ]</code>：都发轻声，类似于汉语中的第一声轻音。
+                        这两个音不会出现在重音节里面（紧跟着重音节），如果轻声<code>[ɚ]</code>紧跟着重音节，例如：<code>[sIs'tɚ]</code>，
+                        此时需要将<code>[ɚ]</code>变为<code>[ɝ]</code>（读作【二】），最终为<code>[sIS'tɝ]</code>。
+                    </p>
+                </div>
             </div>
 
-            <div class="my yb" style="left: 340px; top:295px;">
-                <span>[ɚ]</span>
+            <div class="my yb yb-bgcolor_7" style="left: 340px; top:295px;" title="【er】">
+                <code>[ɚ]</code>
+                <div class="fy-remark">
+                    <p>念【儿】，跟汉语拼音【<code>er</code>】发音类似，轻声翘舌音。</p>
+                    <p class="bc">
+                        <code>[ə]</code>和<code>[ɚ]</code>：都发轻声，类似于汉语中的第一声轻音。
+                        这两个音不会出现在重音节里面（紧跟着重音节），如果轻声<code>[ɚ]</code>紧跟着重音节，例如：<code>[sIs'tɚ]</code>，
+                        此时需要将<code>[ɚ]</code>变为<code>[ɝ]</code>（读作【二】），最终为<code>[sIS'tɝ]</code>。
+                    </p>
+                </div>
             </div>
 
-            <div class="my yb" style="left: 340px; top:220px;">
-                <span>[ɝ]</span>
+            <div class="my yb yb-bgcolor_7" style="left: 340px; top:220px;" title="【er】">
+                <code>[ɝ]</code>
+                <div class="fy-remark">
+                    <p>念【二】，跟汉语拼音【<code>er</code>】发音类似，但要读成第四声。</p>
+                </div>
             </div>
+
 
 
             <!--下面部分-->
 
-            <div class="my yb" style="left: 80px; top:665px;">
-                <span>[aʊ]</span>
+            <div class="my yb" style="left: 80px; top:665px;" title="【ao】">
+                <code>[aʊ]</code>
+                <div class="fy-remark">
+                    <p>念【奥】，跟汉语拼音【<code>ao</code>】发音类似，四声。</p>
+                </div>
             </div>
 
-            <div class="my yb" style="left: 180px; top:665px;">
-                <span>[aɪ]</span>
+            <div class="my yb" style="left: 180px; top:665px;" title="【ai】">
+                <code>[aɪ]</code>
+                <div class="fy-remark">
+                    <p>念【爱】，跟汉语拼音【<code>ai</code>】发音类似，四声。</p>
+                </div>
             </div>
 
-            <div class="my yb" style="left: 280px; top:665px;">
-                <span>[ɔɪ]</span>
+            <div class="my yb" style="left: 280px; top:665px;" title="【o】【yi】">
+                <code>[ɔɪ]</code>
+                <div class="fy-remark">
+                    <p>念【哦衣】，跟汉语拼音【<code>o</code>】【<code>yi</code>】发音类似，这个音标要独立发出两个音，而不是合成音。</p>
+                </div>
             </div>
 
         </div>
 
     </div>
 
+
+    <!--中间的单个音标发音说明面板-->
     <div id="yb_remark_panel" class="yb-remark-panel"></div>
-    <div style="clear:left;"></div>
+
+    <!--最右边的音标发音总结面板-->
+    <div class="right-message-panel">
+        <ul>
+            <li>一个母音可以单独存在，一个子音必须配上母音才能发音。</li>
+            <li>母音中，除了<code>[ə]</code>和<code>[ɚ]</code>发轻声，其余的母音均发四声。</li>
+        </ul>
+
+    </div>
+    <div style="clear:both;"></div>
 
 
 
-
-
-
-    <table >
-        <tr>
-            <td rowspan="5">元音</td>
-            <td rowspan="3">单元音</td>
-            <td>前元音</td>
-
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">i:</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">I</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-
-            </td>
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">e</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">æ</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td>中元音</td>
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">ʌ</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">ɜː</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-
-            </td>
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">ə</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td>后元音</td>
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">u:</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">ʊ</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-
-            </td>
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">ɔ:</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">ɒ</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">ɑː</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-
-        </tr>
-        <tr>
-            <td rowspan="2">双元音</td>
-            <td>开合双元音</td>
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">eɪ</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">aɪ</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-
-            </td>
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">ɔɪ</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">aʊ</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">əʊ</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td>集中双元音</td>
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">ɪə</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">ɛə</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">ʊə</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
-
-
-
-    <table>
-        <tr>
-            <td colspan="2">分类</td>
-            <td colspan="3">爆破音</td>
-            <td colspan="5">摩擦音</td>
-            <td colspan="3">破擦音</td>
-            <td colspan="3">鼻音</td>
-            <td colspan="2">舌则音</td>
-            <td colspan="2">半元音</td>
-        </tr>
-        <tr>
-            <td rowspan="2">辅音</td>
-            <td>清辅音</td>
-
-            <!--爆破音-->
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">p</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">t</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">k</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-
-
-            <!--摩擦音-->
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">f</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">s</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">∫</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">θ</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">h</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-
-
-            <!--破擦音-->
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">t∫</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">tr</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">ts</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-
-            <!--鼻音-->
-            <td colspan="3" class="rq"></td>
-
-
-            <!--舌则音-->
-            <td colspan="2" class="rq"></td>
-
-
-            <!--半元音-->
-            <td colspan="2" class="rq"></td>
-
-
-        </tr>
-        <tr>
-            <td>浊辅音</td>
-
-            <!--爆破音-->
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">b</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">d</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">g</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-
-
-            <!--摩擦音-->
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">v</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">z</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">ʒ</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">ð</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-            <td class="rq"></td>
-
-            <!--破擦音-->
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">dʒ</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">dr</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">dz</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-
-
-            <!--鼻音-->
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">m</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">n</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">ŋ</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-
-
-            <!--舌则音-->
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">l</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">r</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-
-
-            <!--半元音-->
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">w</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-            <td class="rq">
-                <table class="t-zf">
-                    <tr>
-                        <td colspan="2" class="d-zf">j</td>
-                    </tr>
-                    <tr>
-                        <td class="kk">KK</td>
-                        <td class="dj">DJ</td>
-                    </tr>
-                </table>
-            </td>
-
-        </tr>
-        <tr>
+    
+    <!--子音部分-->
+    <div style="margin-top:20px;">
+        <div class="zy-rq">
             
-        </tr>
-    </table>
-         
+            <h4 class="zy-title">无声子音</h4>
+
+            <div class="zy yb yb-bgcolor_1" title="【p】">
+                <code>[p]</code>
+                <div class="fy-remark">
+                    <p>和汉语拼音中的声母【<code>p</code>】发音相同，轻声，只送气不发声，声带不振动。</p>
+                </div>
+            </div>
+
+            <div class="zy yb yb-bgcolor_2" title="【t】">
+                <code>[t]</code>
+                <div class="fy-remark">
+                    <p>和汉语拼音中的声母【<code>t</code>】发音相同，有气不发声。</p>
+                </div>
+            </div>
+
+            <div class="zy yb yb-bgcolor_3" title="【k】">
+                <code>[k]</code>
+                <div class="fy-remark">
+                    <p>和汉语拼音中的声母【<code>k</code>】发音相同，有气不发声。</p>
+                </div>
+            </div>
+
+            <div class="zy yb yb-bgcolor_4" title="【f】">
+                <code>[f]</code>
+                <div class="fy-remark">
+                    <p>和汉语拼音中的声母【<code>f</code>】发音相同，有气不发声。</p>
+                </div>
+            </div>
+
+            <div class="zy yb yb-bgcolor_5" title="【s】">
+                <code>[s]</code>
+                <div class="fy-remark">
+                    <p>念【思】，和汉语拼音中的声母【<code>s</code>】发音相同，注意轻声有气不发声。</p>
+                </div>
+            </div>
+
+            <div class="zy yb yb-bgcolor_6" title="咬舌[s]">
+                <code>[θ]</code>
+                <div class="fy-remark">
+                    <p>
+                        咬舌音，轻轻咬住舌尖发音标<code>[s]</code>的音，由于是咬着舌尖，因此不能发出和<code>[s]</code>一样清脆的音。
+                    </p>
+                </div>
+            </div>
+
+            <div class="zy yb yb-bgcolor_7" title="">
+                <code>[∫]</code>
+                <div class="fy-remark">
+                    <p>
+                        汉语拼音【<code>sh</code>】+【<code>ü</code>】组合发出的音，不能直接按照汉语拼音【<code>xi</code>】发音，
+                        是扁着嘴巴发出的，轻声声带不振动。发音的时候，嘴巴不能嘟着，不是圆的，是扁的。
+                    </p>
+                </div>
+            </div>
+
+            <div class="zy yb yb-bgcolor_8" title="[t]+[∫]">
+                <code>[t∫]</code>
+                <div class="fy-remark">
+                    <p>
+                        念<code>[t]</code>+<code>[∫]</code>组合而成的音，类似于汉语拼音【<code>t</code>】+【<code>chi</code>】的音，
+                        也就是发【吃】音，但是以【<code>t</code>】音开始。
+                    </p>
+                </div>
+            </div>
+
+            <div class="zy yb" title="【h】">
+                <code>[h]</code>
+                <div class="fy-remark">
+                    <p>
+                        和汉语拼音【<code>h</code>】的发音类似，但要声带不振动。
+                    </p>
+                </div>
+            </div>
+
+
+
+
+            
+
+
+
+            <div style="clear:both;"></div>
+        </div>
+        <div class="zy-rq">
+            <h4 class="zy-title">有声子音</h4>
+            
+            <div class="zy yb yb-bgcolor_1" title="【b】">
+                <code>[b]</code>
+                <div class="fy-remark">
+                    <p>和汉语拼音中的声母【<code>b</code>】发音相同，轻声发出声音。</p>
+                </div>
+            </div>
+
+            <div class="zy yb yb-bgcolor_2" title="【d】">
+                <code>[d]</code>
+                <div class="fy-remark">
+                    <p>和汉语拼音中的声母【<code>d</code>】发音相同，轻声发出声音。</p>
+                </div>
+            </div>
+
+            <div class="zy yb yb-bgcolor_3" title="【g】">
+                <code>[g]</code>
+                <div class="fy-remark">
+                    <p>和汉语拼音中的声母【<code>g</code>】发音相同，轻声发出声音。</p>
+                </div>
+            </div>
+
+            <div class="zy yb yb-bgcolor_4" title="【v】">
+                <code>[v]</code>
+                <div class="fy-remark">
+                    <p>
+                        不能直接发汉语的【乌】音，而是需要和发【<code>f</code>】音时嘴型相同，即上齿贴住下嘴唇，然后发汉语拼音【<code>wu</code>】音。
+                        简单来说，该音就是保持发【<code>f</code>】音的嘴型发【<code>wu</code>】音。
+                    </p>
+                </div>
+            </div>
+
+            <div class="zy yb yb-bgcolor_5" title="【z】">
+                <code>[z]</code>
+                <div class="fy-remark">
+                    <p>不能直接念【资】，而是英文字母中XYZ中的【<code>Z</code>】的前半截音加上音标<code>[s]</code>的后半截组合起来的发出的音。有点像荆门方言中的“日”发出的音。</p>
+                </div>
+            </div>
+
+            <div class="zy yb yb-bgcolor_6" title="咬舌[z]">
+                <code>[ð]</code>
+                <div class="fy-remark">
+                    <p>咬舌音，轻轻咬住舌尖发音标<code>[z]</code>的音，咬着舌尖，不能清脆发出。</p>
+                </div>
+            </div>
+
+            <div class="zy yb yb-bgcolor_7" title="">
+                <code>[ʒ]</code>
+                <div class="fy-remark">
+                    <p>
+                        嘴型和<code>[∫]</code>相同，但要发出音，有声声带振动。
+                        有点像汉语拼音【<code>ri</code>】的前半截和汉语拼音【<code>yu</code>】的后半截组合发出的音，即汉语拼音【<code>r</code>】+【<code>ü</code>】发出的音。
+                    </p>
+                </div>
+            </div>
+
+            <div class="zy yb yb-bgcolor_8" title="[d]+[ʒ]">
+                <code>[dʒ]</code>
+                <div class="fy-remark">
+                    <p>念<code>[d]</code>+<code>[ʒ]</code>组合而成的音，类似于汉语拼音【<code>d</code>】+【<code>ji</code>】的音。</p>
+                </div>
+            </div>
+
+            <div class="zy kyb"><code>&nbsp;&nbsp;&nbsp;</code></div>
+
+            <div class="zy yb yb-bgcolor_1" title="【me】或【en】">
+                <code>[m]</code>
+                <div class="fy-remark">
+                    <p>鼻音，该音标发音有以下两种情况：</p>
+                    <ul>
+                        <li>该音标在母音前：念【么】，和汉语拼音【<code>me</code>】相同。</li>
+                        <li>该音标在母音后：闭着嘴巴念汉语拼音中的【<code>en</code>】音，有点像哼出来的音。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="zy yb yb-bgcolor_1" title="【ne】或【en】">
+                <code>[n]</code>
+                <div class="fy-remark">
+                    <p>鼻音，该音标发音有以下两种情况：</p>
+                    <ul>
+                        <li>该音标在母音前：念【呢】，和汉语拼音【<code>ne</code>】以及拼音中的声母【<code>n</code>】发音相同。</li>
+                        <li>该音标在母音后：念【嗯】，跟汉语拼音【<code>en</code>】相同，舌尖抵在上齿后面，嘴巴不闭合。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="zy yb yb-bgcolor_1" title="【eng】">
+                <code>[ŋ]</code>
+                <div class="fy-remark">
+                    <p>
+                        鼻音，念【<code>eng</code>】，和音标<code>[n]</code>不同的是，发<code>[ŋ]</code>时，发的是后鼻音。
+                        舌尖要抵在下齿，嘴巴张大，发出汉语拼音【<code>eng</code>】音。
+                    </p>
+                    <div class="bc">
+                        <p>三个音之间的区别：</p>
+                        <p>
+                            当<code>[m]</code>和<code>[n]</code>都在母音后时，
+                            它们与<code>[ŋ]</code>的发音类似都念【嗯】，
+                            只不过是<code>[m]</code>和<code>[n]</code>发的是前鼻音【<code>en</code>】，
+                            而<code>[ŋ]</code>发的是后鼻音【<code>eng</code>】。发音的技巧在于发音时的嘴型和舌头所处位置。
+                        </p>
+                        <ul>
+                            <li>
+                                <code>[m]</code>：闭着嘴巴发【<code>en</code>】音，哼出来的音。
+                            </li>
+                            <li><code>[n]</code>：舌尖抵住上齿，微微张着嘴巴发【<code>en</code>】音，平时汉语交流时，发的就是该音。</li>
+                            <li><code>[ŋ]</code>：发后鼻音，张大嘴巴，舌尖抵住下齿，用力发出后鼻音【<code>eng</code>】音。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="zy yb" title="【le】或【e】-【ou】">
+                <code>[l]</code>
+                <div class="fy-remark">
+                    <p>该音标发音有以下两种情况：</p>
+                    <ul>
+                        <li>该音标在母音前：念【了】，和汉语拼音【<code>le</code>】以及拼音中的声母【<code>l</code>】发音相同。</li>
+                        <li>该音标在母音后：该发音介于音标<code>[ə]</code>-<code>[o]</code>组合之间，（【饿】-【怄】），舌尖顶到上排牙齿右面。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="zy yb" title="【rer】或【er】">
+                <code>[r]</code>
+                <div class="fy-remark">
+                    <p>该音标发音有以下两种情况：</p>
+                    <ul>
+                        <li>该音标在母音前：和汉语拼音中的声母【<code>r</code>】发音相同，但是更偏向于【<code>r</code>】+【<code>er</code>】联合读的音。</li>
+                        <li>该音标在母音后：念【儿】，和汉语拼音【<code>er</code>】发音类似。</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="zy yb" title="【wu】">
+                <code>[w]</code>
+                <div class="fy-remark">
+                    <p>
+                        念【无】，和汉语拼音【<code>wu</code>】类似，
+                        注意和母音<code>[ʊ]</code>和<code>[u]</code>发音时嘴型上的区别，<code>[w]</code>是轻声一声发出，嘴巴不要嘟起来。
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="zy yb" title="【yi】">
+                <code>[j]</code>
+                <div class="fy-remark">
+                    <p>
+                        念【一】,和汉语拼音【<code>yi</code>】发音类似，注意念轻声。
+                    </p>
+                </div>
+            </div>
+
+            
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+
+
 
     <script type="text/javascript">
         $(function () {
             $('.yb').click(function () {
-                $('.my-active').removeClass('my-active');
+                $('.yb-active').removeClass('yb-active');
                 $('#yb_remark_panel').empty().append($(this).children('.fy-remark').html());
-                $(this).addClass('my-active');
+                $(this).addClass('yb-active');
             });
-            
+
 
         });
     </script>
