@@ -106,8 +106,8 @@
             color: #ea6506;
             padding: 10px;
             line-height: 30px;
-            position: fixed;
-            left: 750px;
+            
+            float:left;
         }
 
             .yb-remark-panel code, .right-message-panel code {
@@ -125,8 +125,7 @@
 
         .right-message-panel {
             background-color: #fefdf0;
-            position: fixed;
-            right: 0px;
+            float:right;
             width: 520px;
             font-size: 20px;
             padding: 10px 10px 10px 30px;
@@ -181,25 +180,26 @@
         .zm-panel{
             background-color:#fef0e5;
             margin-top:10px;
-            font-size:24px;
-            border:3px solid #e9833a;
+            font-size:22px;
+            border:3px solid #fcd3b5;
         }
         .zm-panel h4{
             text-align:center;
-            font-size:30px;
-             color:#fff;
-             background-color:#e9833a;
+            font-size:28px;
+             color:#028f8f;
+             background-color:#fcd3b5;
              padding:5px;
+             font-weight:500;
         }
         dl{margin-bottom:10px;}
         dt {
-            color: #118a03;
-            font-weight:600;
+            color: #ea6506;
+            font-weight:500;
             margin-top:10px;
             font-size:26px;
             padding-left:5px;
         }
-        dd{ padding-left:40px;}
+        dd{ padding-left:40px; }
 
     </style>
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
@@ -455,6 +455,7 @@
             <li>和音：类似于“这样”读作“酱”的发音。常见发和音的如音标[n]。</li>
             <li>单词中出现字母“gh”时，“gh”一般不发音。</li>
             <li>有重音节符号的，一般读强调式的一声。</li>
+            <li>如果有两个母音字母连在一起时，一般只发前面的母音字母，后一个母音字母不发音。</li>
         </ul>
 
     </div>
@@ -652,6 +653,7 @@
                             <li><code>[ʌn]</code>:【<code>an</code>】</li>
                             <li><code>[ən]</code>:【<code>en</code>】</li>
                             <li><code>[aʊn]</code>:【<code>ang</code>】，例如:<code>[faund]</code></li>
+                            <li><code>[en]</code>:【<code>ei-n</code>】，例如：<code>rain[ren]</code>（【<code>rei</code>】）</li>
                         </ul>
                     </div>
                 </div>
@@ -766,19 +768,96 @@
 
             <div style="clear:both;"></div>
 
+
+
             <!--26个字母自然发音-->
+            <h1 style="text-align:center; margin-top:30px; color:#028f8f;">26个字母常见发音</h1>
             <div class="zm-zrfy">
 
                 <!--第一列-->
                 <div class="zm-column">
+
                     <div class="zm-panel">
                         <h4>Aa</h4>
                         <dl>
                             <dt>[æ]</dt>
                             <dd>
-                                <code>bag[bæg]</code> 
-                                <code>cat[cæt]</code> 
-                                <code>jam[dʒæm]</code></dd>
+                                <code>bag[bæg]</code>
+                                <code>cat[kæt]</code>
+                                <code>jam[dʒæm]</code>
+                            </dd>
+
+                            <dt>[ɑ]</dt>
+                            <dd>
+                                <code>car[kɑr]</code>
+                            </dd>
+
+                            <dt>[e]</dt>
+                            <dd>
+                                单词以e结尾时，字母a发[e]，例如：<code>face[fes]</code>
+                                <code>game[gem]</code>
+                            </dd>
+                            
+                        </dl>
+                    </div>
+
+                    <div class="zm-panel">
+                        <h4>Ff</h4>
+                        <dl>
+                            <dt>[f]</dt>
+                            <dd>
+                                <code>face[fes]</code>
+                                <code>fan[fæn]</code>
+                                <code>food[fud]</code>
+                            </dd>
+                        </dl>
+                    </div>
+
+                    <div class="zm-panel">
+                        <h4>Kk</h4>
+                        <dl>
+                            <dt>[k]</dt>
+                            <dd>
+                                <code>key[ki]</code>
+                                <code>king[kɪŋ]</code>
+                                <code>kite[kait]</code>
+                            </dd>
+                        </dl>
+                    </div>
+
+                    <div class="zm-panel">
+                        <h4>Pp</h4>
+                        <dl>
+                            <dt>[p]</dt>
+                            <dd>
+                                <code>pig[pIg]</code>
+                                <code>pen[pɛn]</code>
+                                <code>pork[pork]</code>
+                            </dd>
+                        </dl>
+                    </div>
+
+                    <div class="zm-panel">
+                        <h4>Uu</h4>
+                        <dl>
+                            <dt>[]</dt>
+                            <dd>
+                                <code></code>
+                                <code></code>
+                                <code></code>
+                            </dd>
+                        </dl>
+                    </div>
+
+                    <div class="zm-panel">
+                        <h4>Zz</h4>
+                        <dl>
+                            <dt>[]</dt>
+                            <dd>
+                                <code></code>
+                                <code></code>
+                                <code></code>
+                            </dd>
                         </dl>
                     </div>
                 </div>
@@ -796,22 +875,133 @@
                             </dd>
                         </dl>
                     </div>
+
+                    <div class="zm-panel">
+                        <h4>Gg</h4>
+                        <dl>
+                            <dt>[g]</dt>
+                            <dd>
+                                <code>game[gem]</code>
+                                <code>girl[gɝl]</code>
+                                <code>leg[lɛg]</code>
+                            </dd>
+                        </dl>
+                    </div>
+
+                    <div class="zm-panel">
+                        <h4>Ll</h4>
+                        <dl>
+                            <dt>[l]</dt>
+                            <dd>
+                                <code>lake[lek]</code>
+                                <code>leaf[lif]</code>
+                                <code>light[lait]</code>
+                            </dd>
+                        </dl>
+                    </div>
+
+                    <div class="zm-panel">
+                        <h4>Qq</h4>
+                        <dl>
+                            <dt>[kw]</dt>
+                            <dd>
+                                单词中出现qu时，发[kw]（【kuo-ʊ】），例如：
+                                <code>quit[kwit]</code>
+                                <code>queen[kwIn]</code>
+                                <code>question['kwɛstʃən]</code>
+                            </dd>
+                        </dl>
+                    </div>
+
+                    <div class="zm-panel">
+                        <h4>Vv</h4>
+                        <dl>
+                            <dt>[]</dt>
+                            <dd>
+                                <code></code>
+                                <code></code>
+                                <code></code>
+                            </dd>
+                        </dl>
+                    </div>
+
+                    <div class="zm-panel">
+                        <h4>gh</h4>
+                        <dl>
+                            <dt>不发音</dt>
+                            <dd>
+                                <code>light[lait]</code>
+                                <code></code>
+                                <code></code>
+                            </dd>
+                        </dl>
+                    </div>
                 </div>
 
 
                 <!--第三列-->
                 <div class="zm-column">
+
                     <div class="zm-panel">
                         <h4>Cc</h4>
                         <dl>
                             <dt>[k]</dt>
                             <dd>
                                 <code>can[kæn]</code>
-                                <code>car[kar]</code>
+                                <code>car[kɑr]</code>
                                 <code>coat[kot]</code>
                             </dd>
                         </dl>
                     </div>
+
+                    <div class="zm-panel">
+                        <h4>Hh</h4>
+                        <dl>
+                            <dt>[h]</dt>
+                            <dd>
+                                <code>hat[hæt]</code>
+                                <code>hair[hɛr]</code>
+                                <code>hope[hop]</code>
+                            </dd>
+                        </dl>
+                    </div>
+
+                    <div class="zm-panel">
+                        <h4>Mm</h4>
+                        <dl>
+                            <dt>[m]</dt>
+                            <dd>
+                                <code>man[mæn]</code>
+                                <code>mask[mæsk]</code>
+                                <code>meat[mit]</code>
+                            </dd>
+                        </dl>
+                    </div>
+
+                    <div class="zm-panel">
+                        <h4>Rr</h4>
+                        <dl>
+                            <dt>[r]</dt>
+                            <dd>
+                                <code>rabbit['ræbɪt]</code>
+                                <code>rain[ren]</code>
+                                <code>right[rait]</code>
+                            </dd>
+                        </dl>
+                    </div>
+
+                    <div class="zm-panel">
+                        <h4>Ww</h4>
+                        <dl>
+                            <dt>[]</dt>
+                            <dd>
+                                <code></code>
+                                <code></code>
+                                <code></code>
+                            </dd>
+                        </dl>
+                    </div>
+
                 </div>
 
                 <!--第四列-->
@@ -824,9 +1014,59 @@
                                 <code>dog[dɔg]</code>
                                 <code>door[dɔr]</code>
                                 <code>duck[dʌk]</code>
-                             </dd>
+                            </dd>
                         </dl>
                     </div>
+
+                    <div class="zm-panel">
+                        <h4>Ii</h4>
+                        <dl>
+                            <dt>[I]</dt>
+                            <dd>
+                                <code>bib[bIb]</code>
+                                <code>kiss[kis]</code>
+                                <code>six[sIks]</code>
+                            </dd>
+                        </dl>
+                    </div>
+
+                    <div class="zm-panel">
+                        <h4>Nn</h4>
+                        <dl>
+                            <dt>[n]</dt>
+                            <dd>
+                                <code>name[nem]</code>
+                                <code>neck[nɛk]</code>
+                                <code>night[nait]</code>
+                            </dd>
+                        </dl>
+                    </div>
+
+
+                    <div class="zm-panel">
+                        <h4>Ss</h4>
+                        <dl>
+                            <dt>[]</dt>
+                            <dd>
+                                <code></code>
+                                <code></code>
+                                <code></code>
+                            </dd>
+                        </dl>
+                    </div>
+
+                    <div class="zm-panel">
+                        <h4>Xx</h4>
+                        <dl>
+                            <dt>[]</dt>
+                            <dd>
+                                <code></code>
+                                <code></code>
+                                <code></code>
+                            </dd>
+                        </dl>
+                    </div>
+
                 </div>
 
 
@@ -835,11 +1075,68 @@
                     <div class="zm-panel">
                         <h4>Ee</h4>
                         <dl>
+                            <dt>不发音</dt>
+                            <dd>在单词末尾不发音</dd>
                             <dt>[ɛ]</dt>
                             <dd>
                                 <code>bell[bɛl]</code>
                                 <code>desk[dɛsk]</code>
                                 <code>red[rɛd]</code>
+                            </dd>
+                        </dl>
+                    </div>
+
+                    <div class="zm-panel">
+                        <h4>Jj</h4>
+                        <dl>
+                            <dt>[dʒ]</dt>
+                            <dd>
+                                <code>job[dʒɑb]</code>
+                                <code>July[dʒʊ'laɪ]</code>
+                                <code>jump[dʒʌmp]</code>
+                            </dd>
+                        </dl>
+                    </div>
+
+                    <div class="zm-panel">
+                        <h4>Oo</h4>
+                        <dl>
+                            <dt>[o]</dt>
+                            <dd>
+                                <code>cold[kold]</code>
+                                <code>rose[ros]</code>
+                                <code>smoke[smok]</code>
+                            </dd>
+                            <dt>[u]</dt>
+                            <dd>
+                                <code>food[fud]</code>
+                                <code></code>
+                                <code></code>
+                            </dd>
+
+                        </dl>
+                    </div>
+
+                    <div class="zm-panel">
+                        <h4>Tt</h4>
+                        <dl>
+                            <dt>[]</dt>
+                            <dd>
+                                <code></code>
+                                <code></code>
+                                <code></code>
+                            </dd>
+                        </dl>
+                    </div>
+
+                    <div class="zm-panel">
+                        <h4>Yy</h4>
+                        <dl>
+                            <dt>[]</dt>
+                            <dd>
+                                <code></code>
+                                <code></code>
+                                <code></code>
                             </dd>
                         </dl>
                     </div>
